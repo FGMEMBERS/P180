@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>LCD1.ac</path>
+
+  <animation>
+    <object-name>AH</object-name>
+    <type>texmultiple</type>
+    <transform>
+      <subtype>textranslate</subtype>
+      <property>orientation/pitch-deg</property>
+      <factor>0.0043945</factor>
+      <axis>
+        <x>0</x>
+        <y>1</y>
+        <z>0</z>
+      </axis>
+    </transform>
+    <transform>
+      <subtype>texrotate</subtype>
+      <property>orientation/roll-deg</property>
+      <center>
+        <x>0.24</x>
+        <y>0.5</y>
+        <z>0</z>
+      </center>
+      <axis>
+        <x>0</x>
+        <y>0</y>
+        <z>-1</z>
+      </axis>
+    </transform>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>roll</object-name>
+    <property>orientation/roll-deg</property>
+    <factor>1</factor>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0.042</z-m>
+    </center>
+  </animation>
+
+  <animation>
+    <type>texrotate</type>
+    <object-name>arc</object-name>
+    <property>orientation/heading-magnetic-deg</property>
+    <center>
+      <x>0.5</x>
+      <y>0.5</y>
+      <z>0</z>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>-1</z>
+    </axis>
+  </animation>
+
+ <animation>
+   <type>textranslate</type>
+   <object-name>ASIribbon</object-name>
+   <property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+   <interpolation>
+     <entry>
+       <ind> 0.0</ind>
+       <dep>0.0</dep>
+     </entry>
+     <entry>
+       <ind> 100.0</ind>
+       <dep>0.1490</dep>
+     </entry>
+     <entry>
+       <ind> 200.0</ind>
+       <dep>0.2980</dep>
+     </entry>
+     <entry>
+       <ind> 300.0</ind>
+       <dep>0.4455</dep>
+     </entry>
+     <entry>
+       <ind> 400.0</ind>
+       <dep>0.5945</dep>
+     </entry>
+     <entry>
+       <ind> 500.0</ind>
+       <dep>0.7425</dep>
+     </entry>
+     <entry>
+       <ind> 600.0</ind>
+       <dep>0.8890</dep>
+     </entry>
+   </interpolation>
+   <axis>
+     <x>0</x>
+     <y>1</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+</PropertyList>
