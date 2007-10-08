@@ -25,7 +25,7 @@ Wheels/Flaps down Max Landing weight: 84 kt
 
 <airplane mass="7700">
 
-    <approach speed="90" aoa="7" >
+    <approach speed="100" aoa="7" >
         <control-setting axis="/controls/engines/engine[0]/throttle" value="0.2"/>
         <control-setting axis="/controls/engines/engine[1]/throttle" value="0.2"/>
         <control-setting axis="/controls/engines/engine[0]/condition" value="1.0"/>
@@ -69,9 +69,9 @@ Wheels/Flaps down Max Landing weight: 84 kt
     <wing x="-1.7" y="1.0" z="-0.37" length="6.0" chord="1.6"
         sweep="1.0" dihedral="2" taper="0.375"  camber="0.2"
         incidence="1.0" twist="-1.0" >
-        <stall aoa="16" width="6" peak="1.5"/>
-        <flap0 start="0.05" end=".65" lift="1.9" drag="1.5"/>
-        <flap1 start=".65" end=".95" lift="1.4" drag="1.2"/>
+        <stall aoa="18" width="6" peak="1.5"/>
+        <flap0 start="0.05" end=".65" lift="1.4" drag="1.5"/>
+        <flap1 start=".65" end=".95" lift="1.2" drag="1.2"/>
         <control-input axis="/controls/flight/flaps" control="FLAP0"/>
         <control-input axis="/controls/flight/aileron" control="FLAP1"/>
         <control-speed control="FLAP0" transition-time="64.0"/>
@@ -145,7 +145,7 @@ Wheels/Flaps down Max Landing weight: 84 kt
         <control-output control="EXTEND" prop="/gear/gear[0]/position-norm"/>
     </gear>
 
-    <gear x="-0.9" y="1.4" z="-1.99" compression=".4" retract-time="5" spring="0.8" damp="1.2" sfric="1.0" dfric="1.0">
+    <gear x="-0.9" y="1.4" z="-1.99" compression=".4" retract-time="5" spring="1.5" damp="1.8" sfric="1.0" dfric="1.0">
         <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
@@ -153,7 +153,7 @@ Wheels/Flaps down Max Landing weight: 84 kt
         <control-output control="EXTEND" prop="/gear/gear[1]/position-norm"/>
     </gear>
 
-    <gear x="-0.9" y="-1.4" z="-1.99" compression=".4" retract-time="5" spring="0.8" damp="1.2" sfric="1.0" dfric="1.0">
+    <gear x="-0.9" y="-1.4" z="-1.99" compression=".4" retract-time="5" spring="1.5" damp="1.8" sfric="1.0" dfric="1.0">
         <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
@@ -233,7 +233,7 @@ Prop diam: 2.159 m
     <ballast x="-0.9" y="-0.4" z="-1.0" mass="600"/>
 
 <!-- CG -->
-<ballast x="-5.0" y="0.0" z="-0.8" mass="2000"/>
+<ballast x="-3.5" y="0.0" z="-0.8" mass="2000"/>
 
     <weight x="4.2" y="0" z="0" mass-prop="/sim/weight[0]/weight-lb"/>
     <weight x="0" y="0" z="0" mass-prop="/sim/weight[1]/weight-lb"/>
