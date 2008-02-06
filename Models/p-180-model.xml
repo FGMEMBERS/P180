@@ -121,6 +121,32 @@
     <object-name>propblurD</object-name>
   </animation>
 
+  <!-- Left Propeller --> 
+  <animation>
+    <name>Lprop</name>
+    <object-name>Lpale1</object-name>
+    <object-name>Lpale2</object-name>
+    <object-name>Lpale3</object-name>
+    <object-name>Lpale4</object-name>
+    <object-name>Lpale5</object-name>
+    <object-name>Lcone</object-name>
+    <object-name>propdiscG</object-name>
+    <object-name>propblurG</object-name>
+  </animation>
+
+  <!-- Right Propeller --> 
+  <animation>
+    <name>Rprop</name>
+    <object-name>Rpale1</object-name>
+    <object-name>Rpale2</object-name>
+    <object-name>Rpale3</object-name>
+    <object-name>Rpale4</object-name>
+    <object-name>Rpale5</object-name>
+    <object-name>Rcone</object-name>
+    <object-name>propdiscD</object-name>
+    <object-name>propblurD</object-name>
+  </animation>
+
 <!-- Panels -->
 <!--
   <panel>
@@ -200,14 +226,7 @@
 
   <animation>
     <type>spin</type>
-    <object-name>propdiscD</object-name>
-    <object-name>propblurD</object-name>
-    <object-name>Rcone</object-name>
-    <object-name>Rpale1</object-name>
-    <object-name>Rpale2</object-name>
-    <object-name>Rpale3</object-name>
-    <object-name>Rpale4</object-name>
-    <object-name>Rpale5</object-name>
+    <object-name>Rprop</object-name>
     <property>engines/engine[0]/rpm</property>
     <factor> 1 </factor>
     <center>
@@ -407,14 +426,7 @@
 
   <animation>
     <type>spin</type>
-    <object-name>propdiscG</object-name>
-    <object-name>propblurG</object-name>
-    <object-name>Lcone</object-name>
-    <object-name>Lpale1</object-name>
-    <object-name>Lpale2</object-name>
-    <object-name>Lpale3</object-name>
-    <object-name>Lpale4</object-name>
-    <object-name>Lpale5</object-name>
+    <object-name>Lprop</object-name>
     <property>engines/engine[0]/rpm</property>
     <factor> 1 </factor>
     <center>

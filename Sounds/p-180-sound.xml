@@ -63,10 +63,7 @@
     		<volume>
       			<property>/engines/engine[0]/rpm</property>
       			<factor>0.0005</factor>
-   	 		</volume>
-    		<volume>
-      			<property>/sim/sound/E_volume</property>
-      		</volume>
+   	 	</volume>
     		<pitch>
       			<property>/engines/engine[0]/rpm</property>
       			<offset>0.2</offset>
@@ -94,10 +91,7 @@
     		<volume>
       			<property>/engines/engine[1]/rpm</property>
       			<factor>0.0005</factor>
-   	 		</volume>
-    		<volume>
-      			<property>/sim/sound/E_volume</property>
-      		</volume>
+   	 	</volume>
     		<pitch>
       			<property>/engines/engine[1]/rpm</property>
       			<offset>0.2</offset>
@@ -275,9 +269,6 @@
      				<property>/gear/gear[2]/wow</property>
     			</or>
    			</condition>
-   			<volume>
-    			<property>/sim/sound/E_volume</property>
-    		</volume>
    			<volume>
     			<property>/velocities/airspeed-kt</property>
     			<factor>0.01</factor>
