@@ -8,18 +8,16 @@
         <flight-model>yasim</flight-model>
         <aero>p-180-yasim</aero>
         <fuel-fraction>0.8</fuel-fraction>
-        <!--
         <startup>
-            <splash-texture>Aircraft/b1900d/b1900dsplash1.rgb</splash-texture>
+            <splash-texture>Aircraft/P180/P180.png</splash-texture>
         </startup>
-        -->
 
     <mk-viii>
         <assemblies>
             <emission>
-                <red alias="/sim/model/b1900d/material/instruments/emission/red"/>
-                <green alias="/sim/model/b1900d/material/instruments/emission/green"/>
-                <blue alias="/sim/model/b1900d/material/instruments/emission/blue"/>
+                <red alias="/sim/model/P180/material/instruments/emission/red"/>
+                <green alias="/sim/model/P180/material/instruments/emission/green"/>
+                <blue alias="/sim/model/P180/material/instruments/emission/blue"/>
                 <factor alias="/controls/lighting/instruments-norm"/>
             </emission>
         </assemblies>
@@ -86,9 +84,6 @@
         <electrical>
             <path></path>
         </electrical>
-        <autopilot>
-            <path>Aircraft/b1900d/b1900d-autopilot.xml</path>
-        </autopilot>
     </systems>
 
 <!--
@@ -98,7 +93,7 @@
 -->
 
     <sound>
-        <path>Aircraft/b1900d/b1900d-sound.xml</path>
+        <path>Aircraft/P180/Sounds/p-180-sound.xml</path>
     </sound>
 
     <flaps>
@@ -278,11 +273,6 @@
     </input>
     
     <nasal>
-        <systems>
-            <file>Aircraft/b1900d/Nasal/Electrical.nas</file>
-            <file>Aircraft/b1900d/Nasal/systems.nas</file>
-            <file>Aircraft/b1900d/Nasal/flightdirector.nas</file>
-        </systems>
 	<p180>
             <file>Aircraft/P180/Nasal/doors.nas</file>
             <file>Aircraft/P180/Nasal/p180.nas</file>
